@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Section */
+.contact-hero {
+  background: #0a8f3c;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contact-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Main Layout */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background: #eef2f3;
+}
+
+/* Form Box */
+.form-box {
+  flex: 2;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.form-box h2 {
+  margin-bottom: 10px;
+}
+
+.form-box p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Inputs */
+.row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+/* Info Box */
+.info-box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.whatsapp {
+  background: #e6f7ec;
+  padding: 10px;
+  border-radius: 8px;
+}

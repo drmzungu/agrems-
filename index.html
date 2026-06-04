@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Agrems Agrovet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  
+  <nav class="navbar">
+    <h2>Agrems Agrovet</h2>
+    <ul>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+
+  
+  <section class="hero">
+    <div class="overlay">
+      <h1>Agrems Agrovet - Kenya's Premier Agricultural Partner</h1>
+      <p>
+        Premium farm inputs, livestock feeds, expert agricultural consultancy,
+        and quality assurance across all 47 counties.
+      </p>
+      <button>Shop Farm Supplies</button>
+    </div>
+  </section>
+
+  
+  <section class="stats">
+    <div>
+      <h2>500+</h2>
+      <p>Happy Farmers</p>
+    </div>
+    <div>
+      <h2>1000+</h2>
+      <p>Products Available</p>
+    </div>
+    <div>
+      <h2>40+</h2>
+      <p>Counties Served</p>
+    </div>
+    <div>
+      <h2>5+</h2>
+      <p>Years Experience</p>
+    </div>
+  </section>
+  <section class="about">
+  <div class="container">
+    
+    <h1>Kenya's Premier Agrovet - Agricultural Revolution Starts Here</h1>
+
+    <p class="subtitle">
+      Agrems Agrovet is Kenya's leading agricultural supplier, transforming farms across all 47 counties
+      with premium farm inputs, cutting-edge solutions, and expert agricultural guidance. From small-scale
+      family farms to large commercial operations, we deliver exceptional agricultural products and services.
+    </p>
+
+    <div class="cards">
+      
+      <div class="card">
+        <div class="icon green"><i class="fas fa-check"></i></div>
+        <h3>Premium Quality Inputs</h3>
+        <p>Certified seeds from international breeders, scientifically formulated fertilisers, and cutting edge crop production  solution that guarantee exceptional yields and sustainable farming practices</p>
+      </div>
+
+      <div class="card">
+        <div class="icon blue"><i class="fas fa-heart" ></i></div>
+        <h3>Livestock Excellence</h3>
+        <p>Nutritionally balanced feeds, veterinary-grade supplements and comprehesive animal health solution designed to mazimise livestock productivity,health and  livestock productivity,health and profitability for mordern farmers.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon purple"><i class="fas fa-book"></i></div>
+        
+        <h3>Expert Agricultural Guidance</h3>
+        <p>Our team of agronomists and  veterinarians experts provide personalised professional consultstion;soil analysis, crop planning and ongoing support to ensure your agricultural venture, achievees maximum success and sustainability.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="products">
+  <div class="container">
+    <h1>Revolutinary agricultural solution</h1>
+    <p class="subtitle">
+      discover our game changing products that are transforming kenyan agriculture ,one farm at atime
+    </p>
+    <div
+    class="cards">
+  <div class="card">
+    <img src="images/seeds1.jpg" class="card-img">
+    <h3>premium Hybrid seeds</h3>
+    <p>drought resistant ,high yeild varieties engineered fo kenyan soils and conditions. increse your harvest by upto 300% eith our certified genetic innovations</p>
+  </div>
+ <div class="card">
+  <img src="images/farm5.jpg" class="card-img">
+  <h3>Smart fertilisers </h3>
+  <p>precision balanced nutrients with slow rellease technology . maximise soil health while reducing environmental impact by 40%</p>
+ </div>
+<div class="card">
+  <img src="images/animal1.jpg" class="card-img">
+  <h3>advanced animal nutrition</h3>
+  <p> scientifically formulated feeds with probiotics and  essential minerals. boost milk production and meat quality naturally</p>
+
+</div></div>
+
+  </div>
+</section>
+
+<script>
+    
+  const images = [
+    "images/country1.jpg",
+    "images/country2.jpg",
+    "images/country3.jpg",
+   
+  ];
+
+  let index = 0;
+
+  function changeBackground() {
+    const hero = document.querySelector(".hero");
+    hero.style.backgroundImage = `url(${images[index]})`;
+    index = (index + 1) % images.length;
+  }
+
+  setInterval(changeBackground, 5000); 
+  changeBackground(); 
+</script>
+
+</script>
+</body>
+</html>
